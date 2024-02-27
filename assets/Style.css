@@ -16,6 +16,11 @@ li {
 
 /* !Header */
 
+.navbar-brand img {
+    width: 100%;
+    height: 70px;
+}
+
 .top_header {
     margin-bottom: 5rem;
 }
@@ -54,7 +59,7 @@ li {
 
 .middle_header {
     text-align: center;
-    margin-bottom: 10rem !important;
+    margin-bottom: 10rem;
 }
 
 .middle_header h2 {
@@ -254,7 +259,7 @@ li {
 
 .bottom_footer {
     width: 100%;
-    height: 50vh;
+    height: 30rem;
     background-color: #6E07F3;
     display: flex;
     justify-content: center;
@@ -263,13 +268,13 @@ li {
 }
 
 .content_footer {
-    margin: 2rem 0rem;
+    margin-top: 5rem;
 }
 
 .content_footer h3 {
     color: #E2CDFD;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 19px;
 }
 
@@ -278,7 +283,7 @@ li {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -293,17 +298,162 @@ li {
     border: 2px solid #E2CDFD;
     cursor: pointer;
     transition: 0.2s;
-
-    &:hover {
-        background-color: #fff;
-    }
 }
 
-.content_footer ul li:hover .content_footer ul li a i {
-    color: red !important;
+.content_footer ul li:hover {
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .content_footer ul li a i {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
+}
+
+.content_footer ul li:hover a>i {
+    color: #6E07F3;
+}
+
+.content_footer p {
+    color: #fff;
+    margin: 2rem 0rem;
+    font-size: 17px;
+
+}
+
+@media (max-width: 575.98px) {
+    .top_header {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .middle_header {
+        margin-bottom: 5rem;
+    }
+
+    .middle_header h2 {
+        font-size: 32px;
+    }
+
+    .middle_header p {
+        font-size: 18px;
+    }
+
+    .skills {
+        transform: translateY(-7%);
+    }
+
+    .about_section {
+        padding: 6rem 4rem 1rem 4rem;
+
+    }
+
+    .about_section h2 {
+        font-size: 23px;
+    }
+
+    .about_section p {
+        font-size: 15px;
+    }
+
+    .skill {
+        margin-bottom: 3rem;
+    }
+
+    .start_project p {
+        text-align: center;
+        margin: 1rem 0rem;
+    }
+
+    .collaborating {
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .middle_image img {
+        width: 100%;
+        height: 12rem;
+        margin-top: 2rem;
+
+    }
+
+    .bottom_image img {
+        width: 100%;
+        height: 14rem;
+    }
+
+    .middle_header {
+        margin-bottom: 0rem;
+    }
+}
+
+/* For screens between 576px and 767.98px (small devices like tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Add your responsive styles for small devices here */
+}
+
+/* For screens between 768px and 991.98px (medium devices like laptops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Add your responsive styles for medium devices here */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .middle_header {
+        margin-bottom: 5rem;
+    }
+
+    .about_section {
+        background-color: #6E07F3;
+        width: 100%;
+        height: 30rem;
+        padding: 6rem 8rem 1rem 8rem;
+        color: #fff;
+    }
+
+    .about_section h2 {
+        font-size: 29px;
+    }
+
+    .skill .icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .skill .icon i {
+
+        font-size: 24px;
+    }
+
+    .start_project {
+        background-color: #141C3A;
+        padding: 1rem 2rem;
+    }
+
+    .start_project h2 {
+        font-size: 23px;
+    }
+
+    .start_project p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .start_project .btn_project {
+        padding: 11px 16px !important;
+        font-size: 15px;
+    }
+}
+
+/* For screens between 992px and 1199.98px (large devices like desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add your responsive styles for large devices here */
+}
+
+/* For screens larger than 1200px (extra large devices) */
+@media (min-width: 1200px) {
+    /* Add your responsive styles for extra large devices here */
 }
