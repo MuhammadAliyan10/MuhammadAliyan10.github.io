@@ -343,11 +343,11 @@ li {
     }
 
     .skills {
-        transform: translateY(-7%);
+        transform: translateY(-4%);
     }
 
     .about_section {
-        padding: 6rem 4rem 1rem 4rem;
+        padding: 6rem 2rem 1rem 2rem;
 
     }
 
