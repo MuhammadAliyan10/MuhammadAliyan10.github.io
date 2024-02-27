@@ -51,7 +51,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -73,6 +75,7 @@
     <div class="middle_header">
       <h2>ML & DevOps, Developer & ML Engineer</h2>
       <p>I design and code beautifully simple things, and I love what I do.</p>
+      <p>I have experience in <span id="element" style="color: red"></span></p>
       <img class="middle_image" src="./assets/img/mf-avatar.svg" alt="" />
     </div>
     <div class="bottom_header mt-5">
@@ -84,11 +87,13 @@
       <div class="container">
         <h2>Hi, I’m Aliyan. Nice to meet you.</h2>
         <p>
-          Since beginning my journey as a freelance designer 12 years ago, I've
-          done remote work for agencies, consulted for startups, and
-          collaborated with talented people to create digital products for both
-          business and consumer use. I'm quietly confident, naturally curious,
-          and perpetually working on improving my chops.
+          As an adept professional, I seamlessly integrate machine learning,
+          development operations, and full-stack web development. Proficient in
+          the MERN stack, I craft dynamic applications, ensuring intuitive user
+          experiences. With a deep understanding of DevOps methodologies, I
+          streamline development processes. My expertise in machine learning
+          enables me to build predictive models, driving innovation and
+          enhancing business outcomes.
         </p>
       </div>
     </div>
@@ -96,19 +101,19 @@
       <div class="container-fluid">
         <div class="my_skills">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 bord">
               <div class="skill text-center">
                 <div class="icon">
                   <i class="fa-brands fa-aws"></i>
                 </div>
                 <h2>ML & DevOps</h2>
                 <p>
-                  I value simple content structure, clean design patterns, and
-                  thoughtful interactions.
+                  I prioritize streamlined content organization, refined design
+                  methodologies within ML & DevOps contexts.
                 </p>
                 <h3>Things which I use</h3>
                 <p>Linux, Shell, CMD, Git</p>
-                <h3>Framework & Libraries</h3>
+                <h3>Tools</h3>
                 <ul>
                   <li>AWS</li>
                   <li>Jenkins</li>
@@ -117,19 +122,19 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 bord">
               <div class="skill text-center">
                 <div class="icon">
                   <i class="fa-brands fa-react"></i>
                 </div>
                 <h2>Web Developer</h2>
                 <p>
-                  I value simple content structure, clean design patterns, and
-                  thoughtful interactions.
+                  I prioritize cohesive content structure, sleek design
+                  frameworks, and strategic user interactions.
                 </p>
-                <h3>Things which I use</h3>
+                <h3>FrameWork</h3>
                 <p>React, Next, Flask, Express</p>
-                <h3>Framework & Libraries</h3>
+                <h3>Language & DataBase</h3>
                 <ul>
                   <li>Python</li>
                   <li>JavaScript</li>
@@ -138,19 +143,19 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 bord">
               <div class="skill text-center">
                 <div class="icon">
                   <i class="fa-solid fa-microchip"></i>
                 </div>
                 <h2>ML Engineer</h2>
                 <p>
-                  I value simple content structure, clean design patterns, and
-                  thoughtful interactions.
+                  I prioritize structured content, elegant design paradigms, and
+                  strategic user engagement.
                 </p>
-                <h3>Things which I use</h3>
-                <p>Pandas, TensorFlow, NumPy, Scki-py</p>
-                <h3>Framework & Libraries</h3>
+                <h3>Libraries which I use</h3>
+                <p>Pandas, TensorFlow, NumPy, Seaborn</p>
+                <h3>My field</h3>
                 <ul>
                   <li>Python</li>
                   <li>Machine Learning</li>
@@ -218,10 +223,14 @@
           </h3>
           <ul>
             <li>
-              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/MuhammadAliyan10"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/muhammad-aliyan-1900a7275/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </li>
             <li>
               <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -244,4 +253,29 @@
     crossorigin="anonymous"
   ></script>
   <script src="Script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "JavaScript",
+        "Python",
+        "Java",
+        "React",
+        "Flask",
+        "Next",
+        "MongoDb",
+        "SQL",
+        "Express",
+        "HTML",
+        "CSS",
+      ],
+      typeSpeed: 50,
+      smartBackspace: true,
+      cursorChar: "|",
+      loop: true,
+      loopCount: Infinity,
+    });
+  </script>
 </html>
