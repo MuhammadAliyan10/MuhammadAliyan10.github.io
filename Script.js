@@ -70,7 +70,7 @@ function handleForm() {
     let featuresValue = features.value
 
 
-    if (!nameValue && !emailValue && !projectValue && interestValue) {
+    if (!nameValue && !emailValue) {
         document.getElementById('toastValue').innerHTML = "All the fields are required."
         toastBootstrap.show()
     }
