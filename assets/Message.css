@@ -238,7 +238,7 @@ textarea {
 }
 
 /* For screens between 768px and 991.98px (medium devices like laptops) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 900.98px) {
 
 
     /* Add your responsive styles for medium devices here */
@@ -268,8 +268,27 @@ textarea {
 }
 
 /* For screens between 992px and 1199.98px (large devices like desktops) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Add your responsive styles for large devices here */
+@media (min-width: 901px) and (max-width: 1199.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .bottom-header img {
+        display: none;
+    }
+
+    .backImg {
+
+
+        height: 100vh;
+
+    }
+
+    .conForm {
+        margin-top: 10rem;
+
+        height: 42vh;
+    }
 }
 
 /* For screens larger than 1200px (extra large devices) */
