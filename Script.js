@@ -12,11 +12,10 @@ function handelReload() {
 
 }
 
-const toastLiveExample = document.getElementById('liveToast')
-const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-
-
 function handleMessage() {
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+
     let name = document.getElementById('name')
     let nameValue = name.value
     let email = document.getElementById('email')
@@ -56,6 +55,9 @@ Message : ${messageValue}
 }
 
 function handleForm() {
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+
     let name = document.getElementById('name')
     let nameValue = name.value
     let email = document.getElementById('email')
@@ -68,8 +70,8 @@ function handleForm() {
     let featuresValue = features.value
 
 
-    if (!nameValue || !emailValue || !projectValue || interestValue) {
-        document.getElementById('toastValue').innerHTML = "All the fields are required"
+    if (!nameValue && !emailValue && !projectValue && interestValue) {
+        document.getElementById('toastValue').innerHTML = "All the fields are required."
         toastBootstrap.show()
     }
     else {
@@ -78,7 +80,7 @@ function handleForm() {
         project.value = ""
         interest.value = ""
         features.value = ""
-        document.getElementById('toastValue').innerHTML = "Thats for contacting us. We will response you as soon as possible"
+        document.getElementById('toastValue').innerHTML = "Thats for contacting us. We will response you as soon as possible."
         toastBootstrap.show()
     }
 

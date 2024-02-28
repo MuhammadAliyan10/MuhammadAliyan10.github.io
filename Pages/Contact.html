@@ -108,21 +108,21 @@
                 <div class="col-sm-6">
                   <p><label for="project">Project</label></p>
                   <select name="project" id="project" class="select_opt">
-                    <option value="" hidden>Which Project?</option>
-                    <option value="">MERN App</option>
-                    <option value="">Data Science</option>
-                    <option value="">Cloud Computing</option>
-                    <option value="">Machine Learning</option>
+                    <option value="None" hidden>Which Project?</option>
+                    <option value="MERN App">MERN App</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="MAchine Learning">Machine Learning</option>
                   </select>
                 </div>
                 <div class="col-sm-6">
                   <p><label for="interest">Interest</label></p>
                   <select name="interest" id="interest" class="select_opt">
-                    <option value="" hidden>Your Interest?</option>
-                    <option value="">Teamwork</option>
-                    <option value="">Investor</option>
-                    <option value="">Buyer</option>
-                    <option value="">Seller</option>
+                    <option value="None" hidden>Your Interest?</option>
+                    <option value="Teamwork">Teamwork</option>
+                    <option value="Investor">Investor</option>
+                    <option value="Buyer">Buyer</option>
+                    <option value="Seller">Seller</option>
                   </select>
                 </div>
                 <div class="col-sm-12">
@@ -138,7 +138,7 @@
                 </div>
               </div>
               <div class="msh_button">
-                <button type="submit" class="btn_submit" onclick="handleForm()">
+                <button class="btn_submit" onclick="handleForm()">
                   Submit
                 </button>
               </div>
@@ -156,7 +156,7 @@
         aria-atomic="true"
       >
         <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="..." />
+          <i class="fa-solid fa-bell me-4"></i>
           <strong class="me-auto">Alert</strong>
           <button
             type="button"
@@ -165,7 +165,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="toast-body">Please fill out all the fields.</div>
+        <div class="toast-body" id="toastValue"></div>
       </div>
     </div>
   </body>
