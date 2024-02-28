@@ -70,7 +70,7 @@ input {
 .backImg {
     background-image: url('../assets/img/contact.webp');
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@ input {
 .conForm {
     width: 100%;
     margin: 3rem 0rem;
-    height: 90vh;
+    height: auto;
     background-color: #ffffff62;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -97,7 +97,8 @@ input {
 }
 
 .conForm input,
-textarea {
+textarea,
+select {
     width: 100%;
     background: transparent;
     padding: 10px 14px;
@@ -109,6 +110,8 @@ textarea {
 
 
 }
+
+
 
 ::placeholder {
     color: #000;
@@ -185,12 +188,25 @@ textarea {
 
     .backImg {
 
-        height: 145vh;
+        height: 177vh;
+    }
+
+    .nav-item {
+        &:last-child {
+            margin-left: -24px;
+
+        }
     }
 
 }
 
 @media (min-width: 414px) and (max-width: 576.98px) {
+    .nav-item {
+        &:last-child {
+            margin-left: -24px;
+
+        }
+    }
 
     .top_header {
         margin-bottom: 2rem;
@@ -223,7 +239,7 @@ textarea {
 
     .backImg {
 
-        height: 110vh;
+        height: 136vh;
     }
 
 
@@ -239,6 +255,12 @@ textarea {
 
 /* For screens between 768px and 991.98px (medium devices like laptops) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-item {
+        &:last-child {
+            margin-left: -24px;
+
+        }
+    }
 
 
     /* Add your responsive styles for medium devices here */
@@ -252,12 +274,12 @@ textarea {
 
     .backImg {
 
-        height: 100vh;
+        height: 107vh;
     }
 
     .conForm {
 
-        height: 56vh;
+        height: auto;
     }
 
     .messageForm {

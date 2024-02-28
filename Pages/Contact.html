@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/png"
+    />
+    <title>Aliyan | Developer & ML Engineer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../assets/Contact.css" />
+  </head>
+  <body>
+    <div class="backImg">
+      <div class="top_header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html"
+              ><img src="../assets/img/logo.png" alt="Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    ><i class="fa-solid fa-x me-4"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="handelReload()"
+                    ><i class="fa-solid fa-rotate-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="bottom-header">
+        <img src="../assets/img/mf-avatar.svg" alt="" />
+      </div>
+      <section class="Contact">
+        <div class="container">
+          <h2>
+            Want to discuss a startup<br />
+            collaboration? I'm most definitely<br />
+            game.
+          </h2>
+          <div class="conForm">
+            <div class="messageForm">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p><label for="name">Name</label></p>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    name="name"
+                    id="name"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <p><label for="email">Email</label></p>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <p><label for="project">Project</label></p>
+                  <select name="project" id="project" class="select_opt">
+                    <option value="" hidden>Which Project?</option>
+                    <option value="">MERN App</option>
+                    <option value="">Data Science</option>
+                    <option value="">Cloud Computing</option>
+                    <option value="">Machine Learning</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <p><label for="interest">Interest</label></p>
+                  <select name="interest" id="interest" class="select_opt">
+                    <option value="" hidden>Your Interest?</option>
+                    <option value="">Teamwork</option>
+                    <option value="">Investor</option>
+                    <option value="">Buyer</option>
+                    <option value="">Seller</option>
+                  </select>
+                </div>
+                <div class="col-sm-12">
+                  <p><label for="features">Additional Features</label></p>
+                  <textarea
+                    name="features"
+                    id="features"
+                    cols="30"
+                    autocomplete="off"
+                    rows="10"
+                    placeholder="Enter additional features"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="msh_button">
+                <button type="submit" class="btn_submit" onclick="handleForm()">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="..." />
+          <strong class="me-auto">Alert</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Please fill out all the fields.</div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../Script.js"></script>
+</html>
