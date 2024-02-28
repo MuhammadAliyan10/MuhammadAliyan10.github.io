@@ -129,6 +129,7 @@ li {
 .bord {
     border-right: 1px solid #E6ECF8;
 
+
     &:last-child {
         border-right: none;
     }
@@ -334,6 +335,7 @@ li {
 @media (max-width: 575.98px) {
     .bord {
         border-bottom: 1px solid #E6ECF8;
+        border-right: none;
 
         &:last-child {
             border-bottom: none;
@@ -407,6 +409,14 @@ li {
     .middle_header {
         margin-bottom: 0rem;
     }
+
+    .content_footer {
+        margin-top: 10rem;
+    }
+
+    .bottom_footer {
+        height: auto;
+    }
 }
 
 /* For screens between 576px and 767.98px (small devices like tablets) */
@@ -418,6 +428,8 @@ li {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .bord {
         border-bottom: 1px solid #E6ECF8;
+        border-right: none;
+
 
         &:last-child {
             border-bottom: none;

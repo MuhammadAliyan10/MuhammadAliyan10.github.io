@@ -1,0 +1,299 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+li,
+input {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* !Header */
+
+.navbar-brand img {
+    width: 100%;
+    height: 70px;
+}
+
+.top_header {
+    margin-bottom: 5rem;
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding: 1rem 0rem 0.8rem 0rem;
+    border-bottom: 1px solid #E6ECF8;
+    position: relative;
+}
+
+.top_header .btn_contact {
+    padding: 10px 23px !important;
+    font-size: 17px;
+    background-color: transparent;
+    border: 2px solid #6E07F3;
+    color: #6E07F3;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.top_header .btn_contact:hover {
+    background: #6E07F3;
+    color: #fff;
+}
+
+.top_header .btn_contact:active {
+    background: #6E07F3;
+    color: #fff;
+}
+
+.active {
+    color: #6E07F3 !important;
+}
+
+.bottom-header img {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 80px;
+}
+
+.backImg {
+    background-image: url('../assets/img/contact.webp');
+    width: 100%;
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.Contact h2 {
+    font-size: 29px;
+    color: #fff;
+    text-align: center;
+}
+
+.conForm {
+    width: 100%;
+    margin: 3rem 0rem;
+    height: 90vh;
+    background-color: #ffffff62;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.messageForm {
+    padding: 3rem 5rem;
+}
+
+.conForm input,
+textarea {
+    width: 100%;
+    background: transparent;
+    padding: 10px 14px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    outline: none !important;
+    margin-bottom: 1rem;
+
+
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.conForm input[type="email"] {
+    width: 100%;
+    background: transparent;
+    padding: 10px 14px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    outline: none !important;
+}
+
+.conForm label {
+    color: #fff;
+    font-size: 15px;
+}
+
+.msh_button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn_submit {
+    background-color: transparent;
+    border: 2px solid #6E07F3;
+    color: #6E07F3;
+    font-size: 15px;
+    padding: 12px 30px;
+    font-weight: 600;
+    margin: 1rem 0rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    display: block;
+
+    &:hover {
+        background-color: #6E07F3;
+        color: #5BE9B9;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 413.98px) {
+    .top_header {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .Contact h2 {
+        font-size: 18px;
+        margin-top: 4rem;
+    }
+
+    .messageForm {
+        padding: 2rem 1rem;
+    }
+
+    .conForm {
+        height: auto;
+    }
+
+    .btn_submit {
+        margin: 0;
+    }
+
+    .bottom-header img {
+        display: none;
+    }
+
+    .backImg {
+
+        height: 145vh;
+    }
+
+}
+
+@media (min-width: 414px) and (max-width: 576.98px) {
+
+    .top_header {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .Contact h2 {
+        font-size: 18px;
+        margin-top: 4rem;
+    }
+
+    .messageForm {
+        padding: 2rem 1rem;
+    }
+
+    .conForm {
+        height: auto;
+    }
+
+    .btn_submit {
+        margin: 0;
+    }
+
+    .bottom-header img {
+        display: none;
+    }
+
+    .backImg {
+
+        height: 110vh;
+    }
+
+
+
+}
+
+/* For screens between 576px and 767.98px (small devices like tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Add your responsive styles for small devices here */
+
+}
+
+/* For screens between 768px and 991.98px (medium devices like laptops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    /* Add your responsive styles for medium devices here */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .bottom-header img {
+        display: none;
+    }
+
+    .backImg {
+
+        height: 100vh;
+    }
+
+    .conForm {
+
+        height: 56vh;
+    }
+
+    .messageForm {
+        padding: 2rem 2rem;
+    }
+
+
+}
+
+/* For screens between 992px and 1199.98px (large devices like desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add your responsive styles for large devices here */
+}
+
+/* For screens larger than 1200px (extra large devices) */
+@media (min-width: 1200px) and (max-width: 1400.98px) {
+
+    /* Add your responsive styles for extra large devices here */
+    .bottom-header img {
+        display: none;
+    }
+
+    .conForm {
+
+        height: auto;
+    }
+
+    .messageForm {
+        padding: 2rem 3rem;
+    }
+
+    .backImg {
+        height: 120vh;
+    }
+
+    .Contact {
+        margin-top: 5rem;
+    }
+}
