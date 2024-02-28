@@ -250,7 +250,7 @@ li {
 }
 
 .start_project .btn_project {
-    padding: 11px 28px !important;
+    padding: 11px 28px;
     font-size: 17px;
     background-color: transparent;
     border: 2px solid #5BE9B9;
@@ -420,8 +420,61 @@ li {
 }
 
 /* For screens between 576px and 767.98px (small devices like tablets) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /* Add your responsive styles for small devices here */
+@media (min-width: 580px) and (max-width: 767.98px) {
+    .about_section {
+
+        padding: 5rem 1rem 1rem 1rem;
+
+    }
+
+    .about_section h2 {
+        font-size: 23px;
+    }
+
+    .about_section p {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .skill h2 {
+        font-size: 14px;
+    }
+
+    .skill p {
+        font-size: 10px;
+    }
+
+    .skill h3 {
+        font-size: 10px;
+    }
+
+    .skill ul>li {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+
+    .start_project h2 {
+        font-size: 17px;
+
+    }
+
+    .start_project p {
+        font-size: 9px;
+        line-height: 18px;
+    }
+
+    .start_project .btn_project {
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+    .middle_header {
+        margin-bottom: 0;
+    }
+
+    .bottom_image img {
+        height: 15rem;
+    }
 }
 
 /* For screens between 768px and 991.98px (medium devices like laptops) */
@@ -436,6 +489,7 @@ li {
         }
 
     }
+
 
     /* Add your responsive styles for medium devices here */
     .navbar-nav {
@@ -483,17 +537,15 @@ li {
     }
 
     .start_project .btn_project {
-        padding: 11px 16px !important;
+        padding: 11px 16px;
         font-size: 15px;
     }
 }
 
 /* For screens between 992px and 1199.98px (large devices like desktops) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Add your responsive styles for large devices here */
-}
+@media (min-width: 992px) and (max-width: 1240px) {
+    .about_section {
+        padding: 5rem 8rem 1rem 8rem;
 
-/* For screens larger than 1200px (extra large devices) */
-@media (min-width: 1200px) {
-    /* Add your responsive styles for extra large devices here */
+    }
 }

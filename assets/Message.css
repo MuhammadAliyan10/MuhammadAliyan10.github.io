@@ -233,8 +233,25 @@ textarea {
 /* For screens between 576px and 767.98px (small devices like tablets) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    /* Add your responsive styles for small devices here */
+    .conForm {
+        height: auto;
+    }
 
+    .messageForm {
+        padding: 2rem 2rem;
+    }
+
+    .Contact h2 {
+        font-size: 25px;
+    }
+
+    .bottom-header {
+        display: none;
+    }
+
+    .backImg {
+        height: 100vh;
+    }
 }
 
 /* For screens between 768px and 991.98px (medium devices like laptops) */
@@ -280,39 +297,14 @@ textarea {
     .backImg {
 
 
-        height: 100vh;
+        height: 110vh;
 
     }
 
     .conForm {
-        margin-top: 10rem;
-
-        height: 42vh;
+        margin-top: 7rem;
+        height: auto;
     }
 }
 
 /* For screens larger than 1200px (extra large devices) */
-@media (min-width: 1200px) and (max-width: 1400.98px) {
-
-    /* Add your responsive styles for extra large devices here
-    .bottom-header img {
-        display: none;
-    }
-
-    .conForm {
-
-        height: auto;
-    }
-
-    .messageForm {
-        padding: 2rem 3rem;
-    }
-
-    .backImg {
-        height: auto;
-    }
-
-    .Contact {
-        margin-top: 5rem;
-    } */
-}

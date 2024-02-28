@@ -249,12 +249,22 @@ select {
 /* For screens between 576px and 767.98px (small devices like tablets) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    /* Add your responsive styles for small devices here */
+    .bottom-header {
+        display: none;
 
+    }
+
+    .backImg {
+        height: 120vh;
+    }
+
+    .messageForm {
+        padding: 2rem 2rem;
+    }
 }
 
 /* For screens between 768px and 991.98px (medium devices like laptops) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 900.98px) {
     .nav-item {
         &:last-child {
             margin-left: -24px;
@@ -290,32 +300,19 @@ select {
 }
 
 /* For screens between 992px and 1199.98px (large devices like desktops) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Add your responsive styles for large devices here */
-}
+@media (min-width: 902px) and (max-width: 1240.98px) {
+    .nav-item {
+        &:last-child {
+            margin-left: -24px;
 
-/* For screens larger than 1200px (extra large devices) */
-@media (min-width: 1200px) and (max-width: 1400.98px) {
+        }
+    }
 
-    /* Add your responsive styles for extra large devices here
-    .bottom-header img {
+    .bottom-header {
         display: none;
     }
 
-    .conForm {
-
-        height: auto;
-    }
-
-    .messageForm {
-        padding: 2rem 3rem;
-    }
-
     .backImg {
-        height: auto;
+        height: 121vh;
     }
-
-    .Contact {
-        margin-top: 5rem;
-    } */
 }
