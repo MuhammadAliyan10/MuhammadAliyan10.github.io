@@ -80,7 +80,7 @@ function handleForm() {
         project.value = ""
         interest.value = ""
         features.value = ""
-        document.getElementById('toastValue').innerHTML = "Thats for contacting us. We will response you as soon as possible."
+        document.getElementById('toastValue').innerHTML = "Thanks for contacting us. We will response you as soon as possible."
         toastBootstrap.show()
     }
 

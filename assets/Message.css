@@ -96,6 +96,10 @@ input {
     padding: 3rem 5rem;
 }
 
+.toast-header i {
+    color: red;
+}
+
 .conForm input,
 textarea {
     width: 100%;
